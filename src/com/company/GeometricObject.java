@@ -1,60 +1,57 @@
 package com.company;
 
-class GeometricObject {
-    Vertex corner;
-    double width;
-    double height;
-    Vertex velocity;
+import javafx.scene.canvas.GraphicsContext;
 
-    GeometricObject(Vertex corner, double width, double height, Vertex velocity) {
-        this.corner = corner;
-        this.width = width;
-        this.height = height;
-        this.velocity = velocity;
-    }
+public class GeometricObject {
+  Vertex corner;
+  double width;
+  double height;
+  Vertex velocity;
 
-    double size() {
-        return width * height;
-    }
+  public GeometricObject(Vertex corner, double width,
+      double height, Vertex velocity) {
+    super();
+    this.corner = corner;
+    this.width = width;
+    this.height = height;
+    this.velocity = velocity;
+  }
 
-    boolean isLargerThan(GeometricObject that) {
-        return this.size() > that.size();
-    }
+  public void paintMeTo(GraphicsContext gc) {    
+    gc.fillRect(corner.x, corner.y, width, height); 
+  }
 
-    boolean isAbove(GeometricObject that) {
-        if(corner.y == that.corner.y) return false;
-        return that.corner.y > corner.y + height;
-    }
+  public void move() {
+    corner.x += velocity.x;
+    corner.y += velocity.y;
+  }
 
-    boolean isUnderneath(GeometricObject that) {
-        if(corner.y == that.corner.y) return false;
-        return that.corner.y + that.height < corner.y;
-    }
+  double size(){
+    return width*height;
+  }
+  
+  boolean isLargerThan(GeometricObject that){
+    return size()>that.size();
+  }
+  boolean isAbove(GeometricObject that){
+    return corner.y+height<that.corner.y;
+  }
+  boolean isUnderneath(GeometricObject that){
+    return that.isAbove(this);
+  }
+  boolean isLeftOf(GeometricObject that){
+    return corner.x+width<that.corner.x;
+  }
+  boolean isRightOf(GeometricObject that){
+    return that.isLeftOf(this);
+  }
+  boolean touches(GeometricObject that){
+    return !(isLeftOf(that)||isRightOf(that)
+        ||isAbove(that)||isUnderneath(that));
+  }
 
-    boolean isLeftOf(GeometricObject that) {
-        if(corner.y == that.corner.y) return false;
-        return corner.x + width < that.corner.x;
-    }
-
-    boolean isRightOf(GeometricObject that) {
-        if(corner.y == that.corner.y) return false;
-        return corner.x > that.corner.x + that.width;
-    }
-
-    boolean touches(GeometricObject that) {
-        return !this.isLeftOf(that) && !this.isRightOf(that)
-                && ((that.corner.y >= corner.y && that.corner.y <= corner.y + height)
-                || (that.corner.y + that.height >= corner.y && that.corner.y+
-                + that.height <= corner.y + height)) ;
-    }
-
-    public String toString() {
-        return "Corner: " + corner + " Width: " + width + " Height: " + height + " Velocity: " + velocity;
-    }
-    //Hier jetzt die Methoden implementieren!
-    public static void main(String[] args) {
-        GeometricObject g0 = new GeometricObject(new Vertex(0.0,50.0), 150.0,50.0, new Vertex(0.0,0.0));
-        GeometricObject g1 = new GeometricObject(new Vertex(50.0,0.0), 50.0,150.0, new Vertex(0.0,0.0));
-        System.out.println(g0.touches(g1));
-    }
+  @Override
+  public String toString() {
+     return "Geo("+corner+","+width+","+height+","+velocity+")";
+  }
 }
