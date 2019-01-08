@@ -54,4 +54,14 @@ public class GeometricObject {
   public String toString() {
      return "Geo("+corner+","+width+","+height+","+velocity+")";
   }
+
+  boolean equals(GeometricObject that) {
+    return this.corner.equals(that)
+      && (Math.abs(this.width - that.width) < 1
+      && Math.abs(this.height - that.height) < 1);
+  }
+
+  public static void main(String[] args) {
+    System.out.println(new GeometricObject(new Vertex(0, 0), 17, 67687, new Vertex(1, 2)).equals(new GeometricObject(new Vertex(0, 0.8), 17, 67687, new Vertex(1, 200))));
+  }
 }
