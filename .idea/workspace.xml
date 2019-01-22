@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fd4029e2-989d-4530-b672-0a334887d2db" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/oose/com/company/BigIntegerFactorial.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/oose/com/company/BigIntegerFactorial.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/oose/com/company/ConsoleDialogue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/oose/com/company/ConsoleDialogue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/oose/com/company/Date.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/oose/com/company/Date.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/oose/com/company/FXScreen$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/oose/com/company/FXScreen$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/oose/com/company/FXScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/oose/com/company/FXScreen.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/oose/com/company/Fib.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/oose/com/company/Fib.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/oose/com/company/FunGraph.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/oose/com/company/FunGraph.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/oose/com/company/Num.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/oose/com/company/Num.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/oose/com/company/Polygon.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/oose/com/company/Polygon.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/oose/com/company/Star.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/oose/com/company/Star.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/oose/com/company/Vertex.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/oose/com/company/Vertex.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/GeometricObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/GeometricObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Vertex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Vertex.java" afterDir="false" />
-    </list>
+    <list default="true" id="fd4029e2-989d-4530-b672-0a334887d2db" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,9 +13,10 @@
     <session id="-1603078873">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -64,7 +49,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Vertex.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
+            <state relative-caret-position="595">
               <caret line="37" column="72" selection-start-line="37" selection-start-column="72" selection-end-line="37" selection-end-column="72" />
             </state>
           </provider>
@@ -74,7 +59,7 @@
         <entry file="file://$USER_HOME$/Downloads/VertexTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
-              <caret line="20" column="7" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+              <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -83,7 +68,7 @@
         <entry file="file://$USER_HOME$/Downloads/GeometricObjectTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
-              <caret line="21" column="157" lean-forward="true" selection-start-line="21" selection-start-column="108" selection-end-line="21" selection-end-column="157" />
+              <caret line="21" column="157" selection-start-line="21" selection-start-column="108" selection-end-line="21" selection-end-column="157" />
             </state>
           </provider>
         </entry>
@@ -243,7 +228,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -266,6 +250,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -405,16 +390,17 @@
       <workItem from="1544291507252" duration="3119000" />
       <workItem from="1544369283439" duration="2614000" />
       <workItem from="1546959805766" duration="2154000" />
+      <workItem from="1547116099982" duration="75000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89471000" />
+    <option name="totallyTimeSpent" value="89546000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49756098" visible="true" weight="0.3496802" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49756098" visible="true" weight="0.35341153" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -585,6 +571,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Vertex.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="37" column="72" selection-start-line="37" selection-start-column="72" selection-end-line="37" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/VertexTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/GeometricObjectTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="21" column="157" selection-start-line="21" selection-start-column="108" selection-end-line="21" selection-end-column="157" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Polygon.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -634,27 +641,6 @@
             <element signature="e#542#543#0" expanded="true" />
             <element signature="e#609#610#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Vertex.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="37" column="72" selection-start-line="37" selection-start-column="72" selection-end-line="37" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/VertexTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="20" column="7" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/GeometricObjectTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="21" column="157" lean-forward="true" selection-start-line="21" selection-start-column="108" selection-end-line="21" selection-end-column="157" />
         </state>
       </provider>
     </entry>
