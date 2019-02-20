@@ -228,7 +228,7 @@ public class ALTest {
     ys.add("C");
     ys.add("D");
     ys.add("E");
-    assertEquals(ys, xs.sublist(2, 4));
+    assertEquals(ys, xs.sublist(2, 3));
   }
   @Test
   public void testSublist3() {
@@ -238,7 +238,7 @@ public class ALTest {
     assertEquals(is1,is1.sublist(0, 100));
     assertEquals(is2,is1.sublist(1, 9));
     is2 = new A<>(5,6,7);
-    assertEquals(is2,is1.sublist(4, 6));
+    assertEquals(is2,is1.sublist(4, 3));
   }
   
   

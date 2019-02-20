@@ -59,7 +59,7 @@ public class AL<E> implements List<E> {
   public boolean contains(E e) {
     boolean result = false;
     for (int i = 0; i < this.size; i++) {
-      if (this.get(i) == e) result = true;
+      if (this.get(i).equals(e)) result = true;
     }
     return result;
   }
@@ -111,15 +111,24 @@ public class AL<E> implements List<E> {
   }
 
   public void sortBy(Comparator<? super E> cmp) {
-
+    for (int n=this.size; n > 1; n--) {
+      for (int i = 0; i < n-1; i++) {
+        if (cmp.compare(this.get(i), this.get(i+1)) > 0) {
+          E temp1 = this.get(i);
+          E temp2 = this.get(i+1);
+          store[i] = temp2;
+          store[i+1] = temp1;
+        }
+      }
+    }
   }
 
   public boolean containsWith(Predicate<E> pred) {
     if (this.size == 0) return false;
     for (int i = 0; i < this.size; i++) {
-      if (pred.test(this.get(i))) return false;
+      if (pred.test(this.get(i))) return true;
     }
-    return true;
+    return false;
   }
 
   public int size() {
